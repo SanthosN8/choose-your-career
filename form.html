@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Assessment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="container1">
+        <h1>Career Path Assessment</h1>
+        <form id="careerForm">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <p>1. What excites you the most about technology?</p>
+                            <div class="options" id="q1">
+                                <button type="button" onclick="selectAnswer('q1', 'developer')">Building software and applications</button>
+                                <button type="button" onclick="selectAnswer('q1', 'network')">Understanding systems and networks</button>
+                                <button type="button" onclick="selectAnswer('q1', 'uiux')">Designing user-friendly interfaces</button>
+                                <button type="button" onclick="selectAnswer('q1', 'data')">Analyzing large amounts of data</button>
+                                <button type="button" onclick="selectAnswer('q1', 'cyber')">Securing digital systems</button>
+                                <button type="button" onclick="selectAnswer('q1', 'business')">Helping businesses integrate technology</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <p>2. Have you ever tried coding before?</p>
+                            <div class="options" id="q2">
+                                <button type="button" onclick="selectAnswer('q2', 'developer')">Yes, I love coding</button>
+                                <button type="button" onclick="selectAnswer('q2', 'uiux')">Yes, but I prefer design</button>
+                                <button type="button" onclick="selectAnswer('q2', 'entry')">No, but I’m interested in learning</button>
+                                <button type="button" onclick="selectAnswer('q2', 'network')">No, I prefer managing tech systems</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <div class="question-header"><p>3. What type of problems do you enjoy solving—technical, analytical, creative, or strategic?</p></div>
+                            <div class="options" id="q3">
+                                <button type="button" onclick="selectAnswer('q3', 'developer')">Technical problems (e.g., debugging, fixing errors)</button>
+                                <button type="button" onclick="selectAnswer('q3', 'data')">Analytical problems (e.g., finding patterns in data) </button>
+                                <button type="button" onclick="selectAnswer('q3', 'uiux')">Creative problems (e.g., designing user experiences) </button>
+                                <button type="button" onclick="selectAnswer('q3', 'projectmanager')">Strategic problems (e.g., managing teams, planning projects)</button>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <div class="question-header"><p>4. Do you prefer working with visual elements, logic-based coding, or system management?</p></div>
+                            <div class="options" id="q4">
+                                <button type="button" onclick="selectAnswer('q4', 'uiux')">Visual elements (UI, graphics)</button>
+                                <button type="button" onclick="selectAnswer('q4', 'developer')">Logic-based coding (backend, problem-solving) </button>
+                                <button type="button" onclick="selectAnswer('q4', 'network')">System management (networks, IT support) </button>
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <div class="question-header"><p>5. How comfortable are you with math and data analysis? </p></div>
+                            <div class="options" id="q5">
+                                <button type="button" onclick="selectAnswer('q5', 'data')">I love working with numbers and data</button>
+                                <button type="button" onclick="selectAnswer('q5', 'developer')">I prefer logic over numbers </button>
+                                <button type="button" onclick="selectAnswer('q5', 'uiux')">I prefer working with design and creativity</button>
+                                <button type="button" onclick="selectAnswer('q5', 'business')">I don’t like math but enjoy organizing and managing</button>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <div class="question-header"><p>6. Would you prefer developing applications, analyzing data, securing systems, or managing IT projects?</p></div>
+                            <div class="options" id="q6">
+                                <button type="button" onclick="selectAnswer('q6', 'developer')">Developing applications</button>
+                                <button type="button" onclick="selectAnswer('q6', 'data')">Analyzing data</button>
+                                <button type="button" onclick="selectAnswer('q6', 'cyber')">Securing systems</button>
+                                <button type="button" onclick="selectAnswer('q6', 'business')">Managing IT projects</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <div class="question-header"><p>7. Are you interested in how websites and apps function behind the scenes?</p></div>
+                            <div class="options" id="q7">
+                                <button type="button" onclick="selectAnswer('q7', 'backend')">Yes, I’d love to work with backend and databases</button>
+                                <button type="button" onclick="selectAnswer('q7', 'frondend')">No, I prefer front-end design and interactions</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <div class="question-header"><p>8. What fascinates you more—building new things, protecting systems from threats, or making technology more user-friendly?</p></div>
+                            <div class="options" id="q8">
+                                <button type="button" onclick="selectAnswer('q8', 'developer')">Building new things</button>
+                                <button type="button" onclick="selectAnswer('q8', 'cyber')">Protecting systems</button>
+                                <button type="button" onclick="selectAnswer('q8', 'uiux')">Making technology more user-friendly</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <div class="question-header"><p>9. Would you rather work independently on projects or collaborate in a team environment?</p></div>
+                            <div class="options" id="q9">
+                                <button type="button" onclick="selectAnswer('q9', 'developer')">Independently</button>
+                                <button type="button" onclick="selectAnswer('q9', 'business')">In a team environment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="question">
+                            <div class="question-header"><p>10. Where do you see yourself in the IT field five years from now?</p></div>
+                            <div class="options" id="q10">
+                                <button type="button" onclick="selectAnswer('q10', 'developer')">Creating applications</button>
+                                <button type="button" onclick="selectAnswer('q10', 'cyber')">Leading security teams</button>
+                                <button type="button" onclick="selectAnswer('q10', 'data')">Working with AI and data </button>
+                                <button type="button" onclick="selectAnswer('q10', 'uiux')">Designing user interfaces</button>
+                                <button type="button" onclick="selectAnswer('q10', 'business')">Managing IT projects</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Submit Button -->
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="submit-btn" onclick="showSuccessPopup()">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+
+        <!-- Bootstrap Modal (Success Popup) -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">🎉</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <h1 class="text-success">🎊🎂🎁</h1>
+                    <h2 class="modal-title">Congratulations!</h2>
+                    <div class="modal-result" id="modalResult"></div>
+                    <!-- <p>Your career assessment has been successfully submitted.</p>
+                    <p>We will analyze your responses and get back to you soon!</p> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="goToPage()" class="btn w-100" style="color:#fff;background-color: #0056b3;" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="result" id="result"></div>
+    </div>
+    <!-- Confetti & Explosion Effect -->
+    <div class="explosion"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./project.js"> </script>
+</body>
+</html>
